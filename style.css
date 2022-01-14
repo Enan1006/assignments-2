@@ -1,0 +1,160 @@
+* {
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.web-logo {
+    padding: 20px;
+}
+
+section {
+    margin: 120px 100px 0px;
+}
+
+h1 {
+    font-size: 52px;
+    line-height: 70px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.element-gap {
+    margin-top: 20px;
+}
+
+
+/*============================== HERO SECTION ============================*/
+
+.hero {
+    display: flex;
+}
+
+.hero-content {
+    row-gap: 120px;
+}
+
+.btn-hero {
+    background-color: #E02C6D;
+    color: white;
+    font-size: 16px;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 41px;
+    -webkit-border-radius: 41px;
+    -moz-border-radius: 41px;
+    -ms-border-radius: 41px;
+    -o-border-radius: 41px;
+}
+
+
+/*============================== PARTNERS SECTION ============================*/
+
+.partners img{
+    width: 150px;
+    height: 100px;
+}
+ .partners{
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+/*============================== COURSE COLLECTION SECTION ============================*/
+
+.popular-collection>h2 {
+    text-align: center;
+}
+
+.collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.collection {
+    border: 1px solid white;
+    padding:20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin: 20px;
+}
+
+.popular-collection p {
+    font-size: 14px;
+    color: #787885;
+    font-weight: 400;
+}
+
+.fa-star {
+    font-size: 16px;
+    color: #FB8200;
+}
+
+.see-more {
+    color: #E02C6DDE;
+    font-size: 16px;
+    font-weight: 400;
+    float: right;
+    background-color: transparent;
+    border: none;
+    padding-bottom: 50px;
+}
+
+.collection-btn {
+    padding: 20px 0px 100px;
+}
+
+
+footer {
+    background-color: #0a0826;
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.social-icons {
+    font-size: 32px;
+    color: white;
+}
+
+
+/*============================== MOBILE RESPONSIVE ============================*/
+
+@media only screen and (max-width: 668px) {
+
+    section {
+        margin: 100px 10px;
+        width: 100%;
+
+    }
+    .hero {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+
+    .partners {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .collections {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .hero-content {
+        width: 90%;
+
+    }
+
+     .hero-img {
+        width: 80%;
+    }
+}
